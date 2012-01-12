@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>Whiteboard</title>
+	<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script-->
+	<script src="js/jquery-1.6.4.js"></script>
+	<script src="js/modernizr-2.0.6.js"></script>
+	<script src="/socket.io/socket.io.js"></script>	
+	<link href="css/whiteboard.css" rel="stylesheet" media="all" />
+</head>
+<body>
+	<canvas id="canvas" width="800" height="600"></canvas>
+	<button id="red">Red</button>
+	<button id="green">Green</button>
+	<button id="blue">Blue</button>
+	<button id="black">Black</button>
+	<button id="erase">Erase</button>
+
+  	<div id="debug">
+    	<h1>WebSockets Output</h1>
+        <div id="log"></div>
+        <button id="disconnect">Disconnect</button>
+        <button id="clear">Clear</button>
+        <button id="reset">Reset data</button>
+	</div>
+
+	<script src="js/whiteboard.js"></script>
+</body>
+</html>
